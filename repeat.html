@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style>
+  .basic-grid {
+    display: grid;
+    /* repeat(3, 100px)等于100px 100px 100px */
+    grid-template-columns: repeat(3, 100px);
+    /* repeat(2, 50px)等于50px 50px */
+    grid-template-rows: repeat(2, 50px);
+  }
+  .basic-grid > div {font-size: 40px; color: #fff; text-align: center}
+  .basic-grid>div:nth-child(1) {background-color: greenyellow}
+  .basic-grid>div:nth-child(2) {background-color: rebeccapurple}
+  .basic-grid>div:nth-child(3) {background-color: beige}
+  .basic-grid>div:nth-child(4) {background-color: chartreuse}
+  .basic-grid>div:nth-child(5) {background-color: violet}
+  .basic-grid>div:nth-child(6) {background-color: palevioletred}
+  .basic-grid>div:nth-child(7) {background-color: khaki}
+</style>
+<body>
+  <div class="basic-grid">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+  </div>
+</body>
+</html>
